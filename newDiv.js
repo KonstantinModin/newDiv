@@ -1,6 +1,5 @@
 'use strict';
 
-
 class Options {
     constructor(height, width, bg, fontSize, textAlign) {
         this.height = height;
@@ -8,14 +7,12 @@ class Options {
         this.bg = bg;
         this.fontSize = fontSize;
         this.textAlign = textAlign;
-        this.margin = 'auto';
-        // this.i = 1;
+        this.margin = 'auto';       
     }
     newDiv() {
         var div = document.createElement('div');
         document.body.appendChild(div);
-        div.textContent = prompt('Введите текст', 'New div');
-        // console.log(this.i);
+        div.textContent = prompt('Введите текст', 'New div');        
         var s = div.style;
         s.height = this.height;
         s.width = this.width;
